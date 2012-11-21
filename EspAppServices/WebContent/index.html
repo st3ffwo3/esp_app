@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ESP Portal - Login Page</title>
+	<link rel="stylesheet" type="text/css" href="/esp/css/main.css">
+</head>
+<body>
+	<form id="login-form" method="POST" action="j_security_check">
+		<fieldset>
+			<legend>Log in</legend>
+			
+			<label for="login">LoginName</label>
+			<input type="text" id="login" name="j_username" />
+			
+			<label for="password">Passwort</label>
+			<input type="password" id="password" name="j_password" />
+			
+			<input type="submit" class="button" name="commit" value="Login" />
+		</fieldset>
+	</form>
+</body>
+</html>

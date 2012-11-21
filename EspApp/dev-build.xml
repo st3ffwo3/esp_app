@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE project>
+
+<project name="HM.EDU: Generate EspApp (Development Build)" default="deploy" basedir=".">
+
+	<!-- set global properties for this build -->
+	<property name="config.dir" value="../EspAppBuildEnv" />
+
+	<!-- load global properties -->
+	<property file="${config.dir}/global-build.properties" />
+
+	<target name="deploy">
+		<ant dir="." target="complete-build" />
+		<copy todir="${jboss6.deploy.dir}">
+			<fileset dir="${build.env.dist.dir}" includes="EspApp.ear" />
+		</copy>
+		<ant dir="." target="final-clean" />
+	</target>
+
+</project>

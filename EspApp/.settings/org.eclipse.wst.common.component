@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="EspApp">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/" handle="module:/classpath/lib/BasicLibraries/commons/logging/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-configuration-1.7.jar" deploy-path="/" handle="module:/classpath/lib/BasicLibraries/commons/configuration/commons-configuration-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang3-3.1.jar" deploy-path="/" handle="module:/classpath/lib/BasicLibraries/commons/lang3/commons-lang3-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="BasicApi.jar" deploy-path="/" handle="module:/resource/BasicApi/BasicApi">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EspAppApi.jar" deploy-path="/" handle="module:/resource/EspAppApi/EspAppApi">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EspAppDatabaseBean.jar" deploy-path="/" handle="module:/resource/EspAppDatabaseBean/EspAppDatabaseBean">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EspAppInternal.jar" deploy-path="/" handle="module:/resource/EspAppInternal/EspAppInternal">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EspAppServices.war" deploy-path="/" handle="module:/resource/EspAppServices/EspAppServices">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
